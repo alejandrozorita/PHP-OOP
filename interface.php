@@ -6,7 +6,7 @@ function show($message){
 
 abstract class Unit
 {
-    protected $alive = true;
+    protected $hp = 40;
     protected $name;
 
     public function __construct($name)
@@ -29,25 +29,58 @@ abstract class Unit
         show("{$this->getName()} muere");
     }
 
-    abstract public function attack($opponent);
+    public function getHp(){
+        return $this->hp;
+    }
+
+    public function setHp($hp)
+    {
+        $this->hp = $hp;
+
+        show("{$this->name} tiene ahora {$this->hp} de vida");
+    }
+
+    abstract public function attack(Unit $opponent);
 }
+
+
 
 class Soldier extends Unit{
 
-    public function attack($opponent)
+    protected $damage = 40;
+
+    public function attack(Unit $opponent)
     {
         show("{$this->getName()} ataca con espada {$opponent->getName()}");
+
+        $opponent->setHp($opponent->getHp() - $this->damage);
+        
+
+        if ($opponent->getHp() <= 0) {
+            $opponent->die();
+        }
     }
+
+    
 
 }
 
+
+
 class Archer extends Unit{
 
-    public function attack($opponent)
+    protected $damage = 20;
+
+    public function attack(Unit $opponent)
     {
         show("{$this->getName()} ataca con flecha {$opponent->getName()}");
 
-        $opponent->die();
+        $opponent->setHp($opponent->getHp() - $this->damage);
+        
+
+        if ($opponent->getHp() <= 0) {
+            $opponent->die();
+        }
     }
 
 }
