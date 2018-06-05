@@ -51,7 +51,8 @@ $person1 = new Person("Alejandro", "Zorita");
 
 $person2 = new Person("Alejandro2", "Zorita2");
 
-$person1->setNikname("Alzort");$person1->setNikname("Alzort");
+$person1->setNikname("Alzort");
+$person1->setNikname("Alzort");
 $person1->setNikname("Alzort");
 
 echo "Hola {$person1->getFullName()} ({$person1->getNikname()}) eres amigo de {$person2->getFullName()}";
