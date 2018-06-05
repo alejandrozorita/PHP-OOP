@@ -5,6 +5,8 @@ class Person
 {
     protected $firstName;
     protected $lastName;
+    protected $nikname;
+    protected $changeNickname = 0;
 
     function __construct($firstName, $lastName)
     {
@@ -27,14 +29,20 @@ class Person
         return $this->lastName;
     }
 
-    function setFirstName($firstName)
+     function getNikname()
     {
-        $this->firstName = $firstName;
+        return $this->nikname;
     }
 
-    function setLastName($lastName)
+    function setNikname($nikname)
     {
-        $this->lastName = $lastName;
+        if ($this->changeNickname >= 2) {
+            throw new Exception("No puedes cambiar el nombre más de 2 veces");
+        }
+
+        $this->nikname = $nikname;
+        $this->changeNickname++;
+
     }
 
 }
@@ -43,10 +51,10 @@ $person1 = new Person("Alejandro", "Zorita");
 
 $person2 = new Person("Alejandro2", "Zorita2");
 
+$person1->setNikname("Alzort");$person1->setNikname("Alzort");
+$person1->setNikname("Alzort");
 
-$person1->setFirstName('11');
-
-echo "Hola {$person1->getFullName()} eres amigo de {$person2->getFullName()}";
+echo "Hola {$person1->getFullName()} ({$person1->getNikname()}) eres amigo de {$person2->getFullName()}";
 
 /*
 // Este código estaría mal extructurado
