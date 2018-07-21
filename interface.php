@@ -72,11 +72,15 @@ class Soldier extends Unit{
 
     public function __construct($name, Armor $armor = null)
     {
-        $this->armor = $armor;
+        $this->setArmor($armor);
         parent::__construct($name);
     }
 
 
+    public function setArmor(Armor $armor = null)
+    {
+        $this->armor = $armor;
+    }
 
     public function attack(Unit $opponent)
     {
@@ -142,19 +146,37 @@ class Armor{
 }
 
 
-$ramm = new Soldier('Ramm', new Armor());
+$soldier = new Soldier('Soldado');
 
-$alex = new Archer('Alex');
+$archer = new Archer('Arquero');
 
 //$unidad->move('left');
 
 
-$ramm->attack($alex);
+$soldier->attack($archer);
 
-$alex->attack($ramm);
+$archer->attack($soldier);
 
-$ramm->attack($alex);
+$soldier->attack($archer);
 
-$ramm->attack($alex);
+$soldier->setArmor(new Armor());
 
-$alex->attack($ramm);
+$archer->attack($soldier);
+
+$soldier->attack($archer);
+
+$archer->attack($soldier);
+
+$soldier->attack($archer);
+
+$archer->attack($soldier);
+
+$soldier->attack($archer);
+
+$archer->attack($soldier);
+
+$soldier->attack($archer);
+
+$archer->attack($soldier);
+
+
