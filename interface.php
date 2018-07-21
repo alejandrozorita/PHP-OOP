@@ -70,10 +70,10 @@ class Soldier extends Unit{
 
     }
 
+
     public function takeDamage($damage){
         return parent::takeDamage($damage / 2);
     }
-
 }
 
 
@@ -86,7 +86,16 @@ class Archer extends Unit{
     {
         show("{$this->getName()} ataca con flecha {$opponent->getName()} y hace {$this->damage} de daño");
 
-        $opponent->takeDamage($this->damage);
+
+            $opponent->takeDamage($this->damage);
+
+    }
+
+    public function takeDamage($damage)
+    {
+        if (rand(0, 1) == 0) {
+            return parent::takeDamage($damage / 2);
+        }
     }
 
 }
