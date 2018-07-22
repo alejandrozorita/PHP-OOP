@@ -40,25 +40,27 @@ abstract class Unit
         return $this->hp;
     }
 
-    private function setHp($hp)
-    {
-        show("{$this->name} tenía {$this->hp} antes del ataque, tiene ahora {$hp} de vida");
-
-        $this->hp = $hp;
-
-    }
-
 
     public function takeDamage($damage){
 
-         $this->setHp($this->hp - $damage);
+        $vidaOriginal = $this->hp;
 
-         if ($this->hp <= 0) {
+        $this->hp = $this->hp - $this->hp - $this->absorbDamage($damage);
+
+        show("{$this->name} tenía {$this->hp} antes del ataque, tiene ahora {$vidaOriginal} de vida");
+
+        if ($this->hp <= 0) {
             $this->die();
         }
 
         return $damage;
 
+    }
+
+
+    protected function absorbDamage($damage)
+    {
+        return $damage;
     }
 
 
@@ -70,9 +72,8 @@ class Soldier extends Unit{
     protected $damage = 40;
     protected $armor;
 
-    public function __construct($name, Armor $armor = null)
+    public function __construct($name)
     {
-        $this->setArmor($armor);
         parent::__construct($name);
     }
 
@@ -94,14 +95,13 @@ class Soldier extends Unit{
     }
 
 
-
-    public function takeDamage($damage){
-
+    public function absorbDamage($damage)
+    {
         if ($this->armor){
             $damage = $this->armor->absorbDamage($damage);
         }
 
-        return parent::takeDamage($damage / 2);
+        return $damage;
     }
 }
 
