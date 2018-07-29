@@ -3,7 +3,8 @@
 namespace Game;
 
 require 'src/helpers.php';
-require 'vendor/GameTwo.php';
+
+require 'vendor/Armor.php';
 
 
 spl_autoload_register(function ($clasName) {

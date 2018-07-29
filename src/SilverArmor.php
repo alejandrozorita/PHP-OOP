@@ -2,9 +2,9 @@
 
 namespace Game;
 
-use Game\Armor;
+use Game\Armor as Game;
 
-class SilverArmor implements Armor {
+class SilverArmor implements Game {
 
     public function absorbDamage($damage)
     {
