@@ -1,6 +1,9 @@
 <?php
 
+namespace Game;
+
 require 'src/helpers.php';
+require 'vendor/GameTwo.php';
 
 
 spl_autoload_register(function ($clasName) {
@@ -15,9 +18,9 @@ spl_autoload_register(function ($clasName) {
 });
 
 
-$soldier = new Game\Soldier('Soldado');
+$soldier = new Soldier('Soldado');
 
-$archer = new Game\Archer('Arquero');
+$archer = new Archer('Arquero');
 
 //$unidad->move('left');
 
@@ -26,11 +29,11 @@ $soldier->attack($archer);
 
 $archer->attack($soldier);
 
-$archer->setArmor(new Game\SilverArmor());
+$archer->setArmor(new SilverArmor());
 
 $soldier->attack($archer);
 
-$soldier->setArmor(new Game\CursedArmor());
+$soldier->setArmor(new CursedArmor());
 
 $archer->attack($soldier);
 

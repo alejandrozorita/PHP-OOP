@@ -2,6 +2,8 @@
 
 namespace Game;
 
+use Game\Armor;
+
 class Archer extends Unit{
 
     protected $damage = 20;
