@@ -1,7 +1,8 @@
 <?php
 
-class CursedArmor implements Armor {
+namespace Game;
 
+class CursedArmor implements Armor {
 
     public function absorbDamage($damage)
     {

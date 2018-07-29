@@ -6,6 +6,8 @@
  * Time: 17:29
  */
 
+namespace Game;
+
 abstract class Unit
 {
     protected $hp = 40;
@@ -64,6 +66,5 @@ abstract class Unit
     {
         return $damage;
     }
-
 
 }

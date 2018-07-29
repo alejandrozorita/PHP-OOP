@@ -3,16 +3,21 @@
 require 'src/helpers.php';
 
 
-
-
 spl_autoload_register(function ($clasName) {
-    require "src/$clasName.php";
+
+    if (strpos($clasName, 'Game\\') === 0){
+
+        $clasName = str_replace('Game\\', '', $clasName);
+
+        require "src/$clasName.php";
+    }
+
 });
 
 
-$soldier = new Soldier('Soldado');
+$soldier = new Game\Soldier('Soldado');
 
-$archer = new Archer('Arquero');
+$archer = new Game\Archer('Arquero');
 
 //$unidad->move('left');
 
@@ -21,11 +26,11 @@ $soldier->attack($archer);
 
 $archer->attack($soldier);
 
-$archer->setArmor(new SilverArmor());
+$archer->setArmor(new Game\SilverArmor());
 
 $soldier->attack($archer);
 
-$soldier->setArmor(new CursedArmor());
+$soldier->setArmor(new Game\CursedArmor());
 
 $archer->attack($soldier);
 

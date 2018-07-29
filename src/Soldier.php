@@ -1,5 +1,7 @@
 <?php
 
+namespace Game;
+
 class Soldier extends Unit{
 
     protected $damage = 40;
@@ -9,7 +11,6 @@ class Soldier extends Unit{
     {
         parent::__construct($name);
     }
-
 
     public function setArmor(Armor $armor = null)
     {
@@ -26,7 +27,6 @@ class Soldier extends Unit{
         }
 
     }
-
 
     public function absorbDamage($damage)
     {

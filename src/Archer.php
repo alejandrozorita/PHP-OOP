@@ -1,5 +1,7 @@
 <?php
 
+namespace Game;
+
 class Archer extends Unit{
 
     protected $damage = 20;
