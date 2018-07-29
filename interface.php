@@ -123,6 +123,12 @@ class Archer extends Unit{
 
     }
 
+
+    public function setArmor(Armor $armor = null)
+    {
+        $this->armor = $armor;
+    }
+
     public function takeDamage($damage)
     {
         if (rand(0, 1) == 0) {
@@ -135,14 +141,39 @@ class Archer extends Unit{
 
 }
 
+interface Armor
+{
+    public function absorbDamage($damage);
+}
 
-class Armor{
+
+class BronceArmor implements Armor {
+
 
     public function absorbDamage($damage)
     {
         return $damage / 2;
     }
+}
 
+
+class SilverArmor implements Armor {
+
+
+    public function absorbDamage($damage)
+    {
+        return $damage / 3;
+    }
+}
+
+
+class CursedArmor implements Armor {
+
+
+    public function absorbDamage($damage)
+    {
+        return $damage * 2;
+    }
 }
 
 
@@ -157,9 +188,11 @@ $soldier->attack($archer);
 
 $archer->attack($soldier);
 
+$archer->setArmor(new SilverArmor());
+
 $soldier->attack($archer);
 
-$soldier->setArmor(new Armor());
+$soldier->setArmor(new CursedArmor());
 
 $archer->attack($soldier);
 
