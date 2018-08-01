@@ -2,21 +2,12 @@
 
 namespace Game;
 
-require 'src/helpers.php';
+use Game\Armor\CursedArmor;
+use Game\Armor\SilverArmor;
 
-require 'vendor/Armor.php';
+require "../vendor/autoload.php";
 
-
-spl_autoload_register(function ($clasName) {
-
-    if (strpos($clasName, 'Game\\') === 0){
-
-        $clasName = str_replace('Game\\', '', $clasName);
-
-        require "src/$clasName.php";
-    }
-
-});
+require '../src/helpers.php';
 
 
 $soldier = new Soldier('Soldado');
@@ -24,17 +15,19 @@ $soldier = new Soldier('Soldado');
 $archer = new Archer('Arquero');
 
 //$unidad->move('left');
+$silver_armor = new SilverArmor();
 
+$cursed_armor = new CursedArmor();
 
 $soldier->attack($archer);
 
 $archer->attack($soldier);
 
-$archer->setArmor(new SilverArmor());
+$archer->setArmor($silver_armor);
 
 $soldier->attack($archer);
 
-$soldier->setArmor(new CursedArmor());
+$soldier->setArmor($cursed_armor);
 
 $archer->attack($soldier);
 

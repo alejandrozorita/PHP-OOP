@@ -1,6 +1,6 @@
 <?php
 
-namespace GameTwo;
+namespace Game;
 
 interface Armor
 {

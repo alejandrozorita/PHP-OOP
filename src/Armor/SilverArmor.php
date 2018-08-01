@@ -1,10 +1,10 @@
 <?php
 
-namespace Game;
+namespace Game\Armor;
 
-use Game\Armor as Game;
+use Game\Armor;
 
-class SilverArmor implements Game {
+class SilverArmor implements Armor {
 
     public function absorbDamage($damage)
     {
