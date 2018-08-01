@@ -7,8 +7,6 @@ use Game\Armor\SilverArmor;
 
 require "../vendor/autoload.php";
 
-require '../src/helpers.php';
-
 
 $soldier = new Soldier('Soldado');
 
