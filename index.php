@@ -1,80 +1,55 @@
 <?php
 
+namespace Game;
 
-class Person
-{
-    protected $firstName;
-    protected $lastName;
-    protected $nikname;
-    protected $changeNickname = 0;
+require 'src/helpers.php';
 
-    function __construct($firstName, $lastName)
-    {
-        $this->firstName = $firstName;
-        $this->lastName = $lastName;
+require 'vendor/Armor.php';
+
+
+spl_autoload_register(function ($clasName) {
+
+    if (strpos($clasName, 'Game\\') === 0){
+
+        $clasName = str_replace('Game\\', '', $clasName);
+
+        require "src/$clasName.php";
     }
 
-    function getFullName()
-    {
-        return $this->getFirstName() . ' ' . $this->getLastName();
-    }
+});
 
-    function getFirstName()
-    {
-        return $this->firstName;
-    }
 
-    function getLastName()
-    {
-        return $this->lastName;
-    }
+$soldier = new Soldier('Soldado');
 
-     function getNikname()
-    {
-        return $this->nikname;
-    }
+$archer = new Archer('Arquero');
 
-    function setNikname($nikname)
-    {
-        if ($this->changeNickname >= 2) {
-            throw new Exception("No puedes cambiar el nombre más de 2 veces");
-        }
+//$unidad->move('left');
 
-        $this->nikname = $nikname;
-        $this->changeNickname++;
 
-    }
+$soldier->attack($archer);
 
-}
+$archer->attack($soldier);
 
-$person1 = new Person("Alejandro", "Zorita");
+$archer->setArmor(new SilverArmor());
 
-$person2 = new Person("Alejandro2", "Zorita2");
+$soldier->attack($archer);
 
-$person1->setNikname("Alzort");
-$person1->setNikname("Alzort");
-$person1->setNikname("Alzort");
+$soldier->setArmor(new CursedArmor());
 
-echo "Hola {$person1->getFullName()} ({$person1->getNikname()}) eres amigo de {$person2->getFullName()}";
+$archer->attack($soldier);
 
-/*
-// Este código estaría mal extructurado
-// Usamos programación estructurada
+$soldier->attack($archer);
 
-$firstName = 'Alejandro';
-$LastName = 'Zorita';
+$archer->attack($soldier);
 
-$fullName = fullName($firstName, $LastName);
-function fullName($firstName, $LastName)
-{
-    return "$firstName $LastName";
-}
+$soldier->attack($archer);
 
-$firstName2 = 'Alejandro2';
-$LastName2 = 'Zorita2';
+$archer->attack($soldier);
 
-$fullName2 = "$firstName2 $LastName2";
+$soldier->attack($archer);
 
-echo "Hola $fullName, eres amigo de $fullName2";
+$archer->attack($soldier);
 
-*/
+$soldier->attack($archer);
+
+$archer->attack($soldier);
