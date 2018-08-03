@@ -18,5 +18,5 @@
 			return $this->damage;
 		}
 
-		abstract public function getDescription(Unit $attacker, Unit $opponent);
+		abstract public function getDescription(Unit $attacker, Unit $opponent );
 	}

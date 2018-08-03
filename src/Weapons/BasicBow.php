@@ -3,9 +3,8 @@
 	namespace Game\Weapons;
 
 	use Game\Unit;
-	use Game\Weapon;
 
-	class BasicBow extends Weapon
+	class BasicBow extends Bow
 	{
 		protected $damage = 20;
 
