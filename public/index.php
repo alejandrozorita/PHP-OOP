@@ -2,32 +2,24 @@
 
 namespace Game;
 
-use Game\Armor\CursedArmor;
+use Game\Armor\BronceArmor;
 use Game\Armor\SilverArmor;
+use Game\Weapons\CrossBow;
+use Game\Weapons\BasicSword;
 
 require "../vendor/autoload.php";
 
 
-$soldier = new Soldier('Soldado');
+$soldier = new Soldier('Soldado', new BasicSword());
 
-$archer = new Archer('Arquero');
+$soldier->setArmor(new BronceArmor());
 
-//$unidad->move('left');
-$silver_armor = new SilverArmor();
 
-$cursed_armor = new CursedArmor();
+$archer = new Archer('Arquero', new CrossBow());
 
-$soldier->attack($archer);
+$archer->setArmor(new SilverArmor());
 
-$archer->attack($soldier);
 
-$archer->setArmor($silver_armor);
-
-$soldier->attack($archer);
-
-$soldier->setArmor($cursed_armor);
-
-$archer->attack($soldier);
 
 $soldier->attack($archer);
 
@@ -37,10 +29,6 @@ $soldier->attack($archer);
 
 $archer->attack($soldier);
 
-$soldier->attack($archer);
 
-$archer->attack($soldier);
 
-$soldier->attack($archer);
 
-$archer->attack($soldier);
