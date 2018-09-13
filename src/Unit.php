@@ -62,21 +62,20 @@
 
 		public function attack(Unit $opponent)
 		{
+			$attack = $this->weapon->createAttack();
 
-			show("{$this->weapon->getDescription($this, $opponent)}");
+			show("{$attack->getDescription($this, $opponent)}");
 
-			if ($opponent->takeDamage($this->weapon->getDamage()) == 0) {
-				show("¡Pero no le toca!");
-			}
+			$opponent->takeDamage($attack);
 
 		}
 
 
-		public function takeDamage($damage){
+		public function takeDamage(Attack $attack){
 
 			$vidaOriginal = $this->hp;
 
-			$this->hp = $this->hp - $this->absorbDamage($damage);
+			$this->hp = $this->hp - $this->absorbDamage($attack);
 
 			show("{$this->name} tenía {$vidaOriginal} antes del ataque, tiene ahora {$this->hp} de vida");
 
@@ -84,18 +83,16 @@
 				$this->die();
 			}
 
-			return $damage;
-
 		}
 
 
-		public function absorbDamage($damage)
+		public function absorbDamage(Attack $attack)
 		{
 			if ($this->armor) {
-				$damage = $this->armor->absorbDamage($damage);
+				return $this->armor->absorbDamage($attack);
 			}
 
-			return $damage;
+			return $attack->getDamage();
 		}
 
 	}

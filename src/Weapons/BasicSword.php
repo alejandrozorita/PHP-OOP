@@ -10,10 +10,6 @@
 		protected $damage = 20;
 		protected $description = ':unit ataca con espada a :opponent';
 
-		public function getDamage()
-		{
-			return $this->damage;
-		}
 
 	}
 
