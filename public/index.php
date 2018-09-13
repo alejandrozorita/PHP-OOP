@@ -10,12 +10,12 @@ use Game\Weapons\BasicSword;
 require "../vendor/autoload.php";
 
 
-$soldier = new Soldier('Soldado', new BasicSword());
+$soldier = new Unit('Soldado', new BasicSword());
 
 $soldier->setArmor(new BronceArmor());
 
 
-$archer = new Archer('Arquero', new CrossBow());
+$archer = new Unit('Arquero', new CrossBow());
 
 $archer->setArmor(new SilverArmor());
 

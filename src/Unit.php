@@ -2,7 +2,7 @@
 
 	namespace Game;
 
-	abstract class Unit
+	class Unit
 	{
 		protected $hp = 40;
 		protected $name;

@@ -3,18 +3,17 @@
 	namespace Game\Weapons;
 
 	use Game\Unit;
+	use Game\Weapon;
 
-	class BasicBow extends Bow
+	class BasicBow extends Weapon
 	{
 		protected $damage = 20;
+		protected $description = ":unit ataca con el arco a :opponent";
 
 		public function getDamage()
 		{
 			return $this->damage;
 		}
 
-		public function getDescription(Unit $attacker, Unit $opponent)
-		{
-			return "{$attacker->getName()} ataca con el arco a {$opponent->getName()}";
-		}
+
 	}

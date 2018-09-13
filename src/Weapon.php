@@ -9,14 +9,15 @@
 	namespace Game;
 
 
-	abstract class   Weapon
+	abstract class Weapon
 	{
 		protected $damage = 0;
+		protected $magical = false;
+		protected $description = ':unit ataca a :opponent';
 
-		public function getDamage()
+		public function createAttack()
 		{
-			return $this->damage;
+			return new Attack($this->damage, $this->magical, $this->description);
 		}
 
-		abstract public function getDescription(Unit $attacker, Unit $opponent );
 	}
