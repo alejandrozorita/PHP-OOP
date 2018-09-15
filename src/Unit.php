@@ -2,6 +2,8 @@
 
 	namespace Game;
 
+	use Game\Armor\MissingArmor;
+
 	class Unit
 	{
 		protected $hp = 40;
@@ -21,6 +23,8 @@
 			$this->name = $name;
 
 			$this->weapon = $weapon;
+
+			$this->armor = new MissingArmor();
 
 			show("Ha aparecido {$this->getName()} con {$this->getHp()} hp de vida");
 
@@ -75,7 +79,7 @@
 
 			$vidaOriginal = $this->hp;
 
-			$this->hp = $this->hp - $this->absorbDamage($attack);
+			$this->hp = $this->hp - $this->armor->absorbDamage($attack);
 
 			show("{$this->name} tenía {$vidaOriginal} antes del ataque, tiene ahora {$this->hp} de vida");
 
@@ -83,16 +87,6 @@
 				$this->die();
 			}
 
-		}
-
-
-		public function absorbDamage(Attack $attack)
-		{
-			if ($this->armor) {
-				return $this->armor->absorbDamage($attack);
-			}
-
-			return $attack->getDamage();
 		}
 
 	}
