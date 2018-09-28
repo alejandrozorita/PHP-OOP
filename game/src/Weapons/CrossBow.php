@@ -8,8 +8,5 @@
 	class CrossBow extends Weapon
 	{
 		protected $damage = 40;
-		protected $description = ':unit ataca con arco grande a :opponent';
-
-
 	}
  

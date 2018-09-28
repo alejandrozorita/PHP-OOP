@@ -9,5 +9,4 @@
 	{
 		protected $damage = 30;
 		protected $magical = true;
-		protected $description = ":unit ataca con un arco de fuego a :opponent";
 	}

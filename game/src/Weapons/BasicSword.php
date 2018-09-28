@@ -8,9 +8,6 @@
 	class BasicSword extends Weapon
 	{
 		protected $damage = 20;
-		protected $description = ':unit ataca con espada a :opponent';
-
-
 	}
 
 
