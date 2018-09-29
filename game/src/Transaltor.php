@@ -15,11 +15,18 @@
 				'BasicBowAttack' =>  ":unit ataca con el arco a :opponent",
 				'BasicSwordAttack' =>  ":unit ataca con espada a :opponent",
 				'CrossBowAttack' =>  "::unit ataca con arco grande a :opponent",
-				'FireBow Attack' =>  ":unit ataca con un arco de fuego a :opponent",
+				'FireBowAttack' =>  ":unit ataca con un arco de fuego a :opponent",
 				'WeaponAttack' =>  ":unit ataca a :opponent",
 
 
 		];
+
+
+
+		public static function set(array $messages)
+		{
+			static::$messages = $messages;
+		}
 
 		public static function get($key, array $params = array())
 		{

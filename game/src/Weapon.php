@@ -16,7 +16,13 @@
 
 		public function createAttack()
 		{
-			return new Attack($this->damage, $this->magical, $this->description);
+			return new Attack($this->damage, $this->magical, $this->getDescriptionKey());
+		}
+
+
+		public function getDescriptionKey()
+		{
+			return str_replace('Game\Weapons\\', '',get_class($this).'Attack');
 		}
 
 	}

@@ -8,23 +8,23 @@
 
 		protected $damage;
 		protected $magical;
-		protected $description;
+		protected $descriptionKey;
 
 
-		public function __construct($damage, $magical, $description)
+		public function __construct($damage, $magical, $descriptionKey)
 		{
 			$this->damage = $damage;
 			$this->magical = $magical;
-			$this->description = $description;
+			$this->descriptionKey= $descriptionKey;
 		}
 
 		public function getDescription(Unit $attacker, Unit $opponent)
 		{
-			return str_replace(
-					[':unit', ':opponent'],
-					[$attacker->getName(), $opponent->getName()],
-					$this->description
-			);
+
+			return Transaltor::get($this->descriptionKey, [
+					'unit' => $attacker->getName(),
+					'opponent' => $opponent->getName()
+			]);
 		}
 
 
