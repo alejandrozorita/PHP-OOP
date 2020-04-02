@@ -5,12 +5,13 @@ namespace Game\Armor;
 use Game\Armor;
 use Game\Attack;
 
-class SilverArmor extends Armor {
+class SilverArmor extends Armor
+{
 
-	public function absorbPhysicalDamage(Attack $attack)
-	{
-		return $attack->getDamage() / 3;
-	}
+    public function absorbPhysicalDamage(Attack $attack)
+    {
+        return $attack->getDamage() / 3;
+    }
 
 
 }

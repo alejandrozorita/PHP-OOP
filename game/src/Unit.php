@@ -1,92 +1,92 @@
 <?php
 
-	namespace Game;
+namespace Game;
 
-	use Game\Armor\MissingArmor;
+use Game\Armor\MissingArmor;
 
-	class Unit
-	{
-		protected $hp = 40;
-		protected $name;
-		protected $armor;
-		protected $weapon;
+class  Unit
+{
 
+    protected $hp = 40;
 
-		/**
-		 * Unit constructor.
-		 *
-		 * @param        $name
-		 * @param Weapon $weapon
-		 */
-		public function __construct($name, Weapon $weapon)
-		{
-			$this->name = $name;
+    protected $name;
 
-			$this->weapon = $weapon;
+    protected $armor;
 
-			$this->armor = new MissingArmor();
-
-			show("Ha aparecido {$this->getName()} con {$this->getHp()} hp de vida");
+    protected $weapon;
 
 
-		}
+    /**
+     * Unit constructor.
+     *
+     * @param        $name
+     * @param  Weapon  $weapon
+     */
+    public function __construct($name, Weapon $weapon)
+    {
+        $this->name = $name;
 
-		public function setWeapon(Weapon $weapon)
-		{
-			$this->weapon = $weapon;
-		}
+        $this->weapon = $weapon;
 
-		public function setArmor(Armor $armor = null)
-		{
-			$this->armor = $armor;
-		}
+        $this->armor = new MissingArmor();
 
-		public function move($direction)
-		{
-			show("{$this->getName()} avanza en dirección $direction");
-		}
+        show("Ha aparecido {$this->getName()} con {$this->getHp()} hp de vida");
+    }
 
-		public function getName()
-		{
-			return $this->name;
-		}
+    public function setWeapon(Weapon $weapon)
+    {
+        $this->weapon = $weapon;
+    }
 
-		public function die()
-		{
-			show("{$this->getName()} muere");
+    public function setArmor(Armor $armor = null)
+    {
+        $this->armor = $armor;
+    }
 
-			exit();
-		}
+    public function move($direction)
+    {
+        show("{$this->getName()} avanza en dirección $direction");
+    }
 
-		public function getHp(){
-			return $this->hp;
-		}
+    public function getName()
+    {
+        return $this->name;
+    }
 
+    public function die()
+    {
+        show("{$this->getName()} muere");
 
+        exit();
+    }
 
-		public function attack(Unit $opponent)
-		{
-			$attack = $this->weapon->createAttack();
-
-			show("{$attack->getDescription($this, $opponent)}");
-
-			$opponent->takeDamage($attack);
-
-		}
+    public function getHp()
+    {
+        return $this->hp;
+    }
 
 
-		public function takeDamage(Attack $attack){
+    public function attack(Unit $opponent)
+    {
+        $attack = $this->weapon->createAttack();
 
-			$vidaOriginal = $this->hp;
+        show("{$attack->getDescription($this, $opponent)}");
 
-			$this->hp = $this->hp - $this->armor->absorbDamage($attack);
+        $opponent->takeDamage($attack);
+    }
 
-			show("{$this->name} tenía {$vidaOriginal} antes del ataque, tiene ahora {$this->hp} de vida");
 
-			if ($this->hp <= 0) {
-				$this->die();
-			}
+    public function takeDamage(Attack $attack)
+    {
+        $vidaOriginal = $this->hp;
 
-		}
+        $this->hp = $this->hp - $this->armor->absorbDamage($attack);
 
-	}
+        show("{$this->name} tenía {$vidaOriginal} antes del ataque, tiene ahora {$this->hp} de vida");
+
+        if ($this->hp <= 0) {
+            $this->die();
+        }
+    }
+
+}
