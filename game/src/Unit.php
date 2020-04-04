@@ -25,27 +25,39 @@ class  Unit
     public function __construct($name, Weapon $weapon)
     {
         $this->name = $name;
-
         $this->weapon = $weapon;
-
         $this->armor = new MissingArmor();
 
-        show("Ha aparecido {$this->getName()} con {$this->getHp()} hp de vida");
+        Log::info("Ha aparecido {$this->getName()} con {$this->getHp()} hp de vida");
+    }
+
+    public static function createSoldier()
+    {
+        $soldier = new Unit('Soldado', new Weapons\BasicSword());
+        $soldier->setArmor(new Armor\SilverArmor);
+        return $soldier;
     }
 
     public function setWeapon(Weapon $weapon)
     {
         $this->weapon = $weapon;
+        return $this;
     }
 
     public function setArmor(Armor $armor = null)
     {
         $this->armor = $armor;
+        return $this;
+    }
+
+    public function setShield()
+    {
+        return $this;
     }
 
     public function move($direction)
     {
-        show("{$this->getName()} avanza en dirección $direction");
+        Log::info("{$this->getName()} avanza en dirección $direction");
     }
 
     public function getName()
@@ -55,8 +67,7 @@ class  Unit
 
     public function die()
     {
-        show("{$this->getName()} muere");
-
+        Log::info("{$this->getName()} muere");
         exit();
     }
 
@@ -70,7 +81,7 @@ class  Unit
     {
         $attack = $this->weapon->createAttack();
 
-        show("{$attack->getDescription($this, $opponent)}");
+        Log::info("{$attack->getDescription($this, $opponent)}");
 
         $opponent->takeDamage($attack);
     }
@@ -82,7 +93,7 @@ class  Unit
 
         $this->hp = $this->hp - $this->armor->absorbDamage($attack);
 
-        show("{$this->name} tenía {$vidaOriginal} antes del ataque, tiene ahora {$this->hp} de vida");
+        Log::info("{$this->name} tenía {$vidaOriginal} antes del ataque, tiene ahora {$this->hp} de vida");
 
         if ($this->hp <= 0) {
             $this->die();

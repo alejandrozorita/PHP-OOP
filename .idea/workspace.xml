@@ -7,19 +7,34 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/game/composer.json</pharConfigPath>
     <execution>
       <executable />
     </execution>
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="PhpWorkspaceProjectConfiguration">
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.2.1">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/composer" />
       <path value="$PROJECT_DIR$/game/vendor/composer" />
+      <path value="$PROJECT_DIR$/../php-7.4.4" />
     </include_path>
   </component>
   <component name="ProjectId" id="1a0E4SuAa2KShpKbW6L2sIfG2Ke" />
@@ -32,6 +47,17 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+  </component>
+  <component name="RunManager">
+    <configuration name="index.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/game/public/index.php">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="PHP Script.index.php" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -43,11 +69,48 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1585863919368</updated>
-      <workItem from="1585863921388" duration="910000" />
+      <workItem from="1585863921388" duration="3248000" />
+      <workItem from="1586014900965" duration="3357000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="-15" y="-955" key="#PHP" timestamp="1586020280787">
+      <screen x="-263" y="-1080" width="1920" height="1080" />
+    </state>
+    <state x="-15" y="-955" key="#PHP/0.0.1280.800/-263.-1080.1920.1080@-263.-1080.1920.1080" timestamp="1586020280787" />
+    <state x="1502" y="-52" width="669" height="624" key="#index.php" timestamp="1586021551292">
+      <screen x="1280" y="-280" width="1920" height="1080" />
+    </state>
+    <state x="-41" y="-852" width="669" height="624" key="#index.php/0.0.1280.800/-263.-1080.1920.1080@-263.-1080.1920.1080" timestamp="1586020287486" />
+    <state x="1502" y="-52" key="#index.php/0.0.1280.800/1280.-280.1920.1080@1280.-280.1920.1080" timestamp="1586021551292" />
+    <state x="1583" y="83" key="NewPhpClassDialog" timestamp="1586022196243">
+      <screen x="1280" y="-280" width="1920" height="1080" />
+    </state>
+    <state x="40" y="-717" key="NewPhpClassDialog/0.0.1280.800/-263.-1080.1920.1080@-263.-1080.1920.1080" timestamp="1586020330175" />
+    <state x="1583" y="83" key="NewPhpClassDialog/0.0.1280.800/1280.-280.1920.1080@1280.-280.1920.1080" timestamp="1586022196243" />
+    <state x="1336" y="-101" key="SettingsEditor" timestamp="1586021518862">
+      <screen x="1280" y="-280" width="1920" height="1080" />
+    </state>
+    <state x="-207" y="-901" key="SettingsEditor/0.0.1280.800/-263.-1080.1920.1080@-263.-1080.1920.1080" timestamp="1586020021787" />
+    <state x="1336" y="-101" key="SettingsEditor/0.0.1280.800/1280.-280.1920.1080@1280.-280.1920.1080" timestamp="1586021518862" />
+    <state x="-35" y="-905" width="639" height="729" key="find.popup" timestamp="1586020593078">
+      <screen x="-263" y="-1080" width="1920" height="1080" />
+    </state>
+    <state x="-35" y="-905" width="639" height="729" key="find.popup/0.0.1280.800/-263.-1080.1920.1080@-263.-1080.1920.1080" timestamp="1586020593078" />
   </component>
 </project>

@@ -11,13 +11,14 @@ abstract class Armor
             return $this->absorbMagicDamage($attack);
         }
 
-        return $this->absorbFisicalDamage($attack);
+        return $this->absorbPhysicalDamage($attack);
     }
 
     public function absorbPhysicalDamage(Attack $attack)
     {
         return $attack->getDamage();
     }
+
 
     public function absorbMagicDamage(Attack $attack)
     {

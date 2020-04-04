@@ -12,16 +12,7 @@ namespace Game;
 class Transaltor
 {
 
-    protected static $messages = [
-      'BasicBowAttack' => ":unit ataca con el arco a :opponent",
-      'BasicSwordAttack' => ":unit ataca con espada a :opponent",
-      'CrossBowAttack' => "::unit ataca con arco grande a :opponent",
-      'FireBowAttack' => ":unit ataca con un arco de fuego a :opponent",
-      'WeaponAttack' => ":unit ataca a :opponent",
-
-
-    ];
-
+    protected static $messages = [];
 
     public static function set(array $messages)
     {
