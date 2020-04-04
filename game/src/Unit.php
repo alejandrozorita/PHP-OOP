@@ -4,8 +4,10 @@ namespace Game;
 
 use Game\Armor\MissingArmor;
 
-class  Unit
+class Unit extends Model
 {
+
+    const MAX_DAMAGE = 3;
 
     protected $hp = 40;
 
@@ -15,15 +17,19 @@ class  Unit
 
     protected $weapon;
 
+    protected $attributes = [];
+
 
     /**
      * Unit constructor.
      *
      * @param        $name
      * @param  Weapon  $weapon
+     * @param  array  $attributes
      */
-    public function __construct($name, Weapon $weapon)
+    public function __construct($name, Weapon $weapon, array $attributes = [])
     {
+        $this->fill($attributes);
         $this->name = $name;
         $this->weapon = $weapon;
         $this->armor = new MissingArmor();
@@ -31,9 +37,9 @@ class  Unit
         Log::info("Ha aparecido {$this->getName()} con {$this->getHp()} hp de vida");
     }
 
-    public static function createSoldier()
+    public static function createSoldier(array $attributes = [])
     {
-        $soldier = new Unit('Soldado', new Weapons\BasicSword());
+        $soldier = new Unit('Soldado', new Weapons\BasicSword(), $attributes);
         $soldier->setArmor(new Armor\SilverArmor);
         return $soldier;
     }
@@ -76,7 +82,6 @@ class  Unit
         return $this->hp;
     }
 
-
     public function attack(Unit $opponent)
     {
         $attack = $this->weapon->createAttack();
@@ -86,18 +91,26 @@ class  Unit
         $opponent->takeDamage($attack);
     }
 
-
     public function takeDamage(Attack $attack)
     {
         $vidaOriginal = $this->hp;
 
-        $this->hp = $this->hp - $this->armor->absorbDamage($attack);
+        $this->setHp($this->armor->absorbDamage($attack));
 
-        Log::info("{$this->name} tenía {$vidaOriginal} antes del ataque, tiene ahora {$this->hp} de vida");
+        Log::info("{$this->nombre_completo} tenía {$vidaOriginal} antes del ataque, tiene ahora {$this->hp} de vida");
 
         if ($this->hp <= 0) {
             $this->die();
         }
+    }
+
+    protected function setHp(int $damage)
+    {
+        if ($damage > static::MAX_DAMAGE) {
+            $damage = 10;
+        }
+
+        $this->hp = $this->hp - $damage;
     }
 
 }

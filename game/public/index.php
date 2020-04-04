@@ -14,13 +14,16 @@ Transaltor::set(
   ]
 );
 
-$logger = new FileLogger();
+Log::setLogger(new HtmlLogger());
 
-$soldier = Unit::createSoldier($logger)
-               ->setArmor(new Armor\SilverArmor)
-               ->setShield();
+$soldier = Unit::createSoldier(
+  [
+    'nombre_completo' => 'nombre de mi unidad',
+  ]
+)->setArmor(new Armor\SilverArmor)->setShield();
 
-$archer = Unit::createSoldier($logger);
+
+$archer = Unit::createSoldier();
 
 $soldier->attack($archer);
 

@@ -1,1 +1,10 @@
-
+(2020-04-04 17:48:41) Ha aparecido Soldado con 40 hp de vida
+(2020-04-04 17:48:41) Ha aparecido Soldado con 40 hp de vida
+(2020-04-04 17:48:41) Soldado ataca con espada a Soldado
+(2020-04-04 17:48:41) Soldado tenía 40 antes del ataque, tiene ahora 33.333333333333 de vida
+(2020-04-04 17:48:41) Soldado ataca con espada a Soldado
+(2020-04-04 17:48:41) Soldado tenía 40 antes del ataque, tiene ahora 33.333333333333 de vida
+(2020-04-04 17:48:41) Soldado ataca con espada a Soldado
+(2020-04-04 17:48:41) Soldado tenía 33.333333333333 antes del ataque, tiene ahora 26.666666666667 de vida
+(2020-04-04 17:48:41) Soldado ataca con espada a Soldado
+(2020-04-04 17:48:41) Soldado tenía 33.333333333333 antes del ataque, tiene ahora 26.666666666667 de vida

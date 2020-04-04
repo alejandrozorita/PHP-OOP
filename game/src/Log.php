@@ -1,13 +1,20 @@
 <?php
 
-
 namespace Game;
-
 
 class Log
 {
+
+    protected static $logger;
+
+    public static function setLogger(Logger $logger)
+    {
+        static::$logger = $logger;
+    }
+
     public static function info($message)
     {
-        return '1';
+        static::$logger->info($message);
     }
+
 }
