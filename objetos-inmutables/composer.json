@@ -15,7 +15,7 @@
       "src/helpers.php"
     ],
     "psr-4": {
-      "Game\\": "src/"
+      "ObjetosInmutables\\": "src/"
     }
   }
 }

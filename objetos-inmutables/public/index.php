@@ -1,6 +1,6 @@
 <?php
 
-namespace IteracionObjetos;
+namespace ObjetosInmutables;
 
 require "../vendor/autoload.php";
 
@@ -13,7 +13,14 @@ $joana = new User(['name' => 'Joana']);
 
 // Casa
 $lunchBox = new LunchBox(['Bocadillo', 'Manzana']);
-$lunchBox2 = clone($lunchBox);
+
+$lunchBox2 = new LunchBox(
+  [
+    new Food(['name' => 'Bocadillo']),
+    new Food(['name' => 'Patatas']),
+    new Food(['name' => 'Zumo de naranja', 'bebida' => true])
+  ]
+);
 
 $raquel->setLunch($lunchBox);
 $joana->setLunch($lunchBox2);
