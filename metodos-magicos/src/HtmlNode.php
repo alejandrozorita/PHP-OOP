@@ -16,6 +16,19 @@ class HtmlNode
         $this->content = $content;
     }
 
+
+    public function __invoke($name, $default = null)
+    {
+        return $this->get($name, $default);
+    }
+
+
+    public function get($name, $default = null)
+    {
+        return $this->attributes[ $name ] ?? $default;
+    }
+
+
     public function __toString()
     {
         return $this->render();
@@ -24,9 +37,9 @@ class HtmlNode
 
     public static function __callStatic($method, array $args = [])
     {
-        $content = isset($args[0]) ? $args[0] : null ;
-        $attributes = isset($args[1]) ? $args[1] : [] ;
-        return new HtmlNode($method, $content ,$attributes);
+        $content = isset($args[ 0 ]) ? $args[ 0 ] : null;
+        $attributes = isset($args[ 1 ]) ? $args[ 1 ] : [];
+        return new HtmlNode($method, $content, $attributes);
     }
 
 
@@ -60,5 +73,6 @@ class HtmlNode
         }
         return $result;
     }
+
 
 }
