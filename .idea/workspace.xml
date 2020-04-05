@@ -47,12 +47,12 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.PHP" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.PHP" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/metodos-magicos-__sleep__wakeup/public" />
       <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/metodos-magicos-__sleep__wakeup/public" />
       <recent name="$PROJECT_DIR$/base-pruebas/src" />
       <recent name="$PROJECT_DIR$/metodos-magicos/src" />
       <recent name="$PROJECT_DIR$/metodos-magicos" />
@@ -79,7 +79,7 @@
       <option name="presentableId" value="Default" />
       <updated>1585863919368</updated>
       <workItem from="1585863921388" duration="3248000" />
-      <workItem from="1586014900965" duration="20663000" />
+      <workItem from="1586014900965" duration="23503000" />
     </task>
     <servers />
   </component>
@@ -110,19 +110,25 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="286" y="302" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/-1280.280.1280.800/0.0.1920.1080@0.0.1920.1080" timestamp="1586103713137" />
+    <state x="298" y="425" key="#com.jetbrains.php.refactoring.move.PhpMoveClassDialog#1" timestamp="1586111855635">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="298" y="425" key="#com.jetbrains.php.refactoring.move.PhpMoveClassDialog#1/-1280.280.1280.800/0.0.1920.1080@0.0.1920.1080" timestamp="1586111855635" />
     <state x="1502" y="-52" width="669" height="624" key="#index.php" timestamp="1586021551292">
       <screen x="1280" y="-280" width="1920" height="1080" />
     </state>
     <state x="-41" y="-852" width="669" height="624" key="#index.php/0.0.1280.800/-263.-1080.1920.1080@-263.-1080.1920.1080" timestamp="1586020287486" />
     <state x="1502" y="-52" key="#index.php/0.0.1280.800/1280.-280.1920.1080@1280.-280.1920.1080" timestamp="1586021551292" />
-    <state x="1583" y="83" key="NewPhpClassDialog" timestamp="1586047259326">
-      <screen x="1280" y="-280" width="1920" height="1080" />
+    <state x="303" y="341" key="NewPhpClassDialog" timestamp="1586112395030">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
+    <state x="303" y="341" key="NewPhpClassDialog/-1280.280.1280.800/0.0.1920.1080@0.0.1920.1080" timestamp="1586112395029" />
     <state x="40" y="-717" key="NewPhpClassDialog/0.0.1280.800/-263.-1080.1920.1080@-263.-1080.1920.1080" timestamp="1586020330175" />
     <state x="1583" y="83" key="NewPhpClassDialog/0.0.1280.800/1280.-280.1920.1080@1280.-280.1920.1080" timestamp="1586047259326" />
-    <state x="1289" y="-77" key="SettingsEditor" timestamp="1586048764158">
-      <screen x="1280" y="-280" width="1920" height="1080" />
+    <state x="697" y="169" key="SettingsEditor" timestamp="1586112653359">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
+    <state x="697" y="169" key="SettingsEditor/-1280.280.1280.800/0.0.1920.1080@0.0.1920.1080" timestamp="1586112653359" />
     <state x="-207" y="-901" key="SettingsEditor/0.0.1280.800/-263.-1080.1920.1080@-263.-1080.1920.1080" timestamp="1586020021787" />
     <state x="1289" y="-77" key="SettingsEditor/0.0.1280.800/1280.-280.1920.1080@1280.-280.1920.1080" timestamp="1586048764158" />
     <state x="1633" y="184" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1586034058859">
