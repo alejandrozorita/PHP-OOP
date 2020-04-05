@@ -1,6 +1,6 @@
 {
     "name": "alejandrozorita/oop",
-    "description": "Cpráctivas básicas oop",
+    "description": "Prácticas básicas oop",
     "type": "proyect",
     "license": "MIT",
     "authors": [
@@ -15,7 +15,7 @@
             "src/helpers.php"
         ],
         "psr-4": {
-            "ClonarObjetos\\" : "src/"
+            "IteracionObjetos\\" : "src/"
 
         }
     }

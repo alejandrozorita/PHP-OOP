@@ -1,11 +1,13 @@
 <?php
 
-namespace ClonarObjetos;
+namespace IteracionObjetos;
 
 require "../vendor/autoload.php";
 
 // Padre
 $gordon = new User(['name' => 'Gordon']);
+
+
 
 // Hijas
 $raquel = new User(['name' => 'Raquel']);
@@ -20,7 +22,5 @@ $joana->setLunch($lunchBox2);
 
 
 // Escuela
-$raquel->eat($lunchBox);
-$joana->eat($lunchBox);
-
-var_dump($lunchBox, $lunchBox2);
+$raquel->eatMealt($lunchBox);
+$joana->eatMealt($lunchBox);

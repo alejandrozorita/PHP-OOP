@@ -1,8 +1,11 @@
 <?php
 
-namespace ClonarObjetos;
+namespace IteracionObjetos;
 
-class LunchBox
+use Exception;
+use Traversable;
+
+class LunchBox implements \IteratorAggregate, \Countable
 {
     protected $food = [];
     protected $original = true;
@@ -29,6 +32,24 @@ class LunchBox
     public function isEmpty()
     {
         return empty($this->food);
+    }
+
+
+    /**
+     * @inheritDoc
+     */
+    public function getIterator()
+    {
+        return new \ArrayIterator($this->food);
+    }
+
+
+    /**
+     * @inheritDoc
+     */
+    public function count()
+    {
+        return count($this->food);
     }
 
 }

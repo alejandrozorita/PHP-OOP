@@ -1,6 +1,6 @@
 <?php
 
-namespace ClonarObjetos;
+namespace IteracionObjetos;
 
 abstract class Model
 {

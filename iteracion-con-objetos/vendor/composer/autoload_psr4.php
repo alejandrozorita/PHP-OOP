@@ -6,5 +6,5 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'ClonarObjetos\\' => array($baseDir . '/src'),
+    'IteracionObjetos\\' => array($baseDir . '/src'),
 );

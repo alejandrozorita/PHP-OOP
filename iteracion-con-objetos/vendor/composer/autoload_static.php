@@ -11,14 +11,14 @@ class ComposerStaticInit8ac7f4a2758280937e3676766c2178cc
     );
 
     public static $prefixLengthsPsr4 = array (
-        'C' => 
+        'I' => 
         array (
-            'ClonarObjetos\\' => 14,
+            'IteracionObjetos\\' => 17,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'ClonarObjetos\\' => 
+        'IteracionObjetos\\' => 
         array (
             0 => __DIR__ . '/../..' . '/src',
         ),

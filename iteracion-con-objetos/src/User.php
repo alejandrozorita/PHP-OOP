@@ -1,6 +1,6 @@
 <?php
 
-namespace ClonarObjetos;
+namespace IteracionObjetos;
 
 class User extends Model
 {
@@ -28,6 +28,18 @@ class User extends Model
         }
 
         echo "<p>{$this->name} está comuniendo un {$this->lunch->shift()}!</p>";
+    }
+
+
+    public function eatMealt()
+    {
+        $total = $this->lunch->count();
+
+        echo "<p>{$this->name} tiene {$total} alimentos</p>";
+
+        foreach ($this->lunch as $food) {
+            echo "<p>{$this->name} come {$food}!</p>";
+        }
     }
 
 }
