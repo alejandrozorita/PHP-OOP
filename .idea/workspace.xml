@@ -52,6 +52,7 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/base-pruebas/src" />
       <recent name="$PROJECT_DIR$/metodos-magicos/src" />
       <recent name="$PROJECT_DIR$/metodos-magicos" />
     </key>
@@ -77,7 +78,7 @@
       <option name="presentableId" value="Default" />
       <updated>1585863919368</updated>
       <workItem from="1585863921388" duration="3248000" />
-      <workItem from="1586014900965" duration="17241000" />
+      <workItem from="1586014900965" duration="19041000" />
     </task>
     <servers />
   </component>
@@ -104,6 +105,10 @@
       <screen x="1280" y="-280" width="1920" height="1080" />
     </state>
     <state x="1590" y="-152" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1280.800/1280.-280.1920.1080@1280.-280.1920.1080" timestamp="1586044628717" />
+    <state x="286" y="302" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1586103713137">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="286" y="302" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/-1280.280.1280.800/0.0.1920.1080@0.0.1920.1080" timestamp="1586103713137" />
     <state x="1502" y="-52" width="669" height="624" key="#index.php" timestamp="1586021551292">
       <screen x="1280" y="-280" width="1920" height="1080" />
     </state>
