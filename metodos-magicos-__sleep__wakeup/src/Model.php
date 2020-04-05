@@ -1,77 +1,51 @@
 <?php
 
-
 namespace MetodosMagicosSleepWakeUp;
-
 
 abstract class Model
 {
-
     protected $attributes = [];
 
 
-    public function __get($name)
+    public function __construct(array $attributes = [])
     {
-        return $this->getAttribute($name);
+        $this->fill($attributes);
     }
 
-    public function __set($name, $value)
+
+    public function fill(array $attributes = [])
     {
-        $this->setAttribute($name, $value);
+        $this->attributes = $attributes;
     }
 
-    public function __isset($name)
-    {
-        return $this->hasAttribute($name);
-    }
-
-    public function __unset($name)
-    {
-        $this->deleteAttributes($name);
-    }
 
     public function getAttributes()
     {
         return $this->attributes;
     }
 
-    public function deleteAttributes($name)
-    {
-        unset($this->attributes[ $name ]);
-    }
-
-    public function hasAttribute($name)
-    {
-        return isset($this->attributes[ $name ]);
-    }
-
-    public function fill($attributes)
-    {
-        $this->attributes = $attributes;
-    }
 
     public function getAttribute($name)
     {
         $value = $this->getAttributeValue($name);
-
         if ($this->hasGetMutator($name)) {
             return $this->mutateAttribute($name, $value);
         }
-
         return $value;
     }
 
+
     protected function hasGetMutator($name)
     {
-        $method = $method = $this->getNameMethod($name);
-        return method_exists($this, $method);
+        return method_exists($this, 'get'.camelCase($name).'Attribute');
     }
+
 
     protected function mutateAttribute($name, $value)
     {
-        $method = $this->getNameMethod($name);
-        return $this->$method($value);
+        return $this->{'get'.camelCase($name).'Attribute'}($value);
     }
+
 
     public function getAttributeValue($name)
     {
@@ -80,15 +54,34 @@ abstract class Model
         }
     }
 
-    protected function getNameMethod($name)
-    {
-        return 'get'.camelCase($name).'Attribute';
-    }
-
 
     public function setAttribute($name, $value)
     {
-        $this->setAttribute[ $name ] = $value;
+        $this->attributes[ $name ] = $value;
+    }
+
+
+    public function __set($name, $value)
+    {
+        $this->setAttribute($name, $value);
+    }
+
+
+    public function __get($name)
+    {
+        return $this->getAttribute($name);
+    }
+
+
+    public function __isset($name)
+    {
+        return isset($this->attributes[ $name ]);
+    }
+
+
+    public function __unset($name)
+    {
+        unset ($this->attributes[ $name ]);
     }
 
 }

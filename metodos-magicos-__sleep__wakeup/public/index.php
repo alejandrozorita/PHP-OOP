@@ -8,5 +8,7 @@ use MetodosMagicosSleepWakeUp\User;
 
 $user = new User(['name' => 'Alejandro']);
 
-echo serialize($user);
+$result = serialize($user);
+var_dump($user);
+file_put_contents('../storage/user.txt', $result);
 
