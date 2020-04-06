@@ -4,6 +4,7 @@ namespace ComparacionObjetos;
 
 require "../vendor/autoload.php";
 
+
 class Time
 {
 
@@ -36,14 +37,14 @@ class Time
 }
 
 
-$time = new Time();
+$time = new Time(null, 'Europe/Londes');
 
-echo "<p>Hoy es {$time}</p>";
+$time2 = new Time(time() - 60);
 
-$tomorrow = $time->tomorrow();
-echo "<p>Mañana sera {$tomorrow}</p>";
-echo "<p>Pasado mañana sera {$tomorrow->tomorrow()}</p>";
+$time3 = new Time(null, 'Europe/Amsterdam');
 
-$yesterday = $time->yesterday();
-echo "<p>Ayer fue {$yesterday}</p>";
-echo "<p>Antes de Ayer fue {$yesterday->yesterday()}</p>";
+if ($time == $time3) {
+    echo 'iguales';
+} else {
+    echo 'no iguales';
+}
