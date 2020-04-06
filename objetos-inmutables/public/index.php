@@ -18,7 +18,7 @@ $lunchBox2 = new LunchBox(
   [
     new Food(['name' => 'Bocadillo']),
     new Food(['name' => 'Patatas']),
-    new Food(['name' => 'Zumo de naranja', 'bebida' => true])
+    new Food(['name' => 'Jugo de naranja', 'bebida' => true])
   ]
 );
 

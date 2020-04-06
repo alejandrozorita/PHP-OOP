@@ -79,7 +79,7 @@
       <option name="presentableId" value="Default" />
       <updated>1585863919368</updated>
       <workItem from="1585863921388" duration="3248000" />
-      <workItem from="1586014900965" duration="26306000" />
+      <workItem from="1586014900965" duration="29712000" />
     </task>
     <servers />
   </component>
@@ -114,15 +114,19 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="298" y="425" key="#com.jetbrains.php.refactoring.move.PhpMoveClassDialog#1/-1280.280.1280.800/0.0.1920.1080@0.0.1920.1080" timestamp="1586111855635" />
+    <state x="309" y="396" key="#com.jetbrains.php.refactoring.move.member.instance.PhpMoveInstanceMethodDialog#" timestamp="1586128953477">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="309" y="396" key="#com.jetbrains.php.refactoring.move.member.instance.PhpMoveInstanceMethodDialog#/-1280.280.1280.800/0.0.1920.1080@0.0.1920.1080" timestamp="1586128953477" />
     <state x="1502" y="-52" width="669" height="624" key="#index.php" timestamp="1586021551292">
       <screen x="1280" y="-280" width="1920" height="1080" />
     </state>
     <state x="-41" y="-852" width="669" height="624" key="#index.php/0.0.1280.800/-263.-1080.1920.1080@-263.-1080.1920.1080" timestamp="1586020287486" />
     <state x="1502" y="-52" key="#index.php/0.0.1280.800/1280.-280.1920.1080@1280.-280.1920.1080" timestamp="1586021551292" />
-    <state x="303" y="341" key="NewPhpClassDialog" timestamp="1586119383136">
+    <state x="303" y="341" key="NewPhpClassDialog" timestamp="1586129818377">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="303" y="341" key="NewPhpClassDialog/-1280.280.1280.800/0.0.1920.1080@0.0.1920.1080" timestamp="1586119383136" />
+    <state x="303" y="341" key="NewPhpClassDialog/-1280.280.1280.800/0.0.1920.1080@0.0.1920.1080" timestamp="1586129818377" />
     <state x="40" y="-717" key="NewPhpClassDialog/0.0.1280.800/-263.-1080.1920.1080@-263.-1080.1920.1080" timestamp="1586020330175" />
     <state x="1583" y="83" key="NewPhpClassDialog/0.0.1280.800/1280.-280.1920.1080@1280.-280.1920.1080" timestamp="1586047259326" />
     <state x="697" y="169" key="SettingsEditor" timestamp="1586112653359">

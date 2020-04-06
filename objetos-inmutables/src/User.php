@@ -33,8 +33,6 @@ class User extends Model
 
     public function eatMealt()
     {
-        $total = $this->lunch->count();
-
         $food = $this->lunch->filter(function ($food) {
             return !$food->bebida;
         });
@@ -43,7 +41,9 @@ class User extends Model
             return $food->bebida;
         });
 
-        echo "<p>{$this->name} tiene {$total} alimentos</p>";
+        echo "<p>{$this->name} tiene {$food->count()} alimentos</p>";
+
+        echo "<p>{$this->name} tiene {$bebida->count()} bebidas</p>";
 
         foreach ($food as $item) {
             echo "<p>{$this->name} come {$item->name}!</p>";

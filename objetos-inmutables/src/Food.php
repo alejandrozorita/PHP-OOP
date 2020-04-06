@@ -4,9 +4,12 @@ namespace ObjetosInmutables;
 
 class Food extends Model
 {
+    protected $bebida = false;
+
+
     public function getBebidaAttribute()
     {
-        return $this->attribute[ 'bebida' ] ?? false;
+        return $this->attributes[ 'bebida' ] ?? false;
     }
 
 }
