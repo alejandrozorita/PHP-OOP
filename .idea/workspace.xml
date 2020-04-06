@@ -46,14 +46,14 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/objetos-inmutables" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.PHP" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/objetos-inmutables" />
       <recent name="$PROJECT_DIR$/objetos-inmutables/src" />
-      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/metodos-magicos-__sleep__wakeup/public" />
       <recent name="$PROJECT_DIR$/base-pruebas/src" />
     </key>
@@ -79,7 +79,7 @@
       <option name="presentableId" value="Default" />
       <updated>1585863919368</updated>
       <workItem from="1585863921388" duration="3248000" />
-      <workItem from="1586014900965" duration="29712000" />
+      <workItem from="1586014900965" duration="30116000" />
     </task>
     <servers />
   </component>
