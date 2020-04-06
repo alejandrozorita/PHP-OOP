@@ -1,0 +1,21 @@
+{
+  "name": "alejandrozorita/oop",
+  "description": "Prácticas básicas oop",
+  "type": "proyect",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Alejandro Zorita",
+      "email": "alejandro.zorita@medssocial.com"
+    }
+  ],
+  "require": {},
+  "autoload": {
+    "files": [
+      "src/helpers.php"
+    ],
+    "psr-4": {
+      "ObjectTrait\\": "src/"
+    }
+  }
+}
