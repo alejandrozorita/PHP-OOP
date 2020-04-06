@@ -9,11 +9,13 @@ class Time
 {
 
     protected $time = NULL;
+    protected $timezone;
 
 
-    public function __construct($time = NULL)
+    public function __construct($time = NULL, $timezone = 'Europe/Londres')
     {
         $this->time = $time ?? time();
+        $this->timezone = $timezone;
     }
 
 
@@ -36,14 +38,25 @@ class Time
 
 }
 
+class MyTime extends Time {
 
-$time = new Time(null, 'Europe/Londes');
+}
 
-$time2 = new Time(time() - 60);
+$time = new Time(null, 'Europe/Londres');
 
-$time3 = new Time(null, 'Europe/Amsterdam');
+$myTime = new MyTime(null, 'Europe/Londres');
 
-if ($time == $time3) {
+if ($time == $myTime) {
+    echo 'iguales';
+} else {
+    echo 'no iguales';
+}
+echo '<br>';
+$time = new Time(null, 'Europe/Londres');
+
+$time2 = new Time(null, 'Europe/Londres');
+
+if ($time == $time2) {
     echo 'iguales';
 } else {
     echo 'no iguales';
