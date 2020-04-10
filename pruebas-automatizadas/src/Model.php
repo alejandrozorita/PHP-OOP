@@ -38,13 +38,13 @@ abstract class Model
 
     protected function hasGetMutator($name)
     {
-        return method_exists($this, 'get' . camelCase($name) . 'Attribute');
+        return method_exists($this, 'get' . Str::camelCase($name) . 'Attribute');
     }
 
 
     protected function mutateAttribute($name, $value)
     {
-        return $this->{'get' . camelCase($name) . 'Attribute'}($value);
+        return $this->{'get' . Str::camelCase($name) . 'Attribute'}($value);
     }
 
 

@@ -3,6 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="cc8fd1a9-ec10-4ee9-aa83-bece98fd23df" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pruebas-automatizadas/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/pruebas-automatizadas/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pruebas-automatizadas/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pruebas-automatizadas/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pruebas-automatizadas/src/Model.php" beforeDir="false" afterPath="$PROJECT_DIR$/pruebas-automatizadas/src/Model.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pruebas-automatizadas/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/pruebas-automatizadas/vendor/composer/autoload_classmap.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pruebas-automatizadas/vendor/composer/autoload_files.php" beforeDir="false" afterPath="$PROJECT_DIR$/pruebas-automatizadas/vendor/composer/autoload_files.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pruebas-automatizadas/vendor/composer/autoload_psr4.php" beforeDir="false" afterPath="$PROJECT_DIR$/pruebas-automatizadas/vendor/composer/autoload_psr4.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pruebas-automatizadas/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/pruebas-automatizadas/vendor/composer/autoload_static.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pruebas-automatizadas/vendor/composer/installed.json" beforeDir="false" afterPath="$PROJECT_DIR$/pruebas-automatizadas/vendor/composer/installed.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,6 +69,7 @@
       <recent name="$PROJECT_DIR$/metodos-magicos-__sleep__wakeup/public" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/pruebas-automatizadas/test" />
       <recent name="$PROJECT_DIR$/trait-macros-metodos-estaticos/vendor/laravel" />
     </key>
   </component>
@@ -89,7 +98,7 @@
       <workItem from="1586259326541" duration="32000" />
       <workItem from="1586265423200" duration="226000" />
       <workItem from="1586532075322" duration="1696000" />
-      <workItem from="1586536232632" duration="3694000" />
+      <workItem from="1586536232632" duration="5142000" />
     </task>
     <servers />
   </component>
@@ -118,10 +127,10 @@
       <screen x="1280" y="-280" width="1920" height="1080" />
     </state>
     <state x="1590" y="-152" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1280.800/1280.-280.1920.1080@1280.-280.1920.1080" timestamp="1586044628717" />
-    <state x="286" y="302" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1586119318768">
+    <state x="286" y="302" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1586541597543">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="286" y="302" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/-1280.280.1280.800/0.0.1920.1080@0.0.1920.1080" timestamp="1586119318768" />
+    <state x="286" y="302" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/-1280.280.1280.800/0.0.1920.1080@0.0.1920.1080" timestamp="1586541597543" />
     <state x="298" y="425" key="#com.jetbrains.php.refactoring.move.PhpMoveClassDialog#1" timestamp="1586111855635">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -135,10 +144,10 @@
     </state>
     <state x="-41" y="-852" width="669" height="624" key="#index.php/0.0.1280.800/-263.-1080.1920.1080@-263.-1080.1920.1080" timestamp="1586020287486" />
     <state x="1502" y="-52" key="#index.php/0.0.1280.800/1280.-280.1920.1080@1280.-280.1920.1080" timestamp="1586021551292" />
-    <state x="303" y="341" key="NewPhpClassDialog" timestamp="1586537088357">
+    <state x="303" y="341" key="NewPhpClassDialog" timestamp="1586541432145">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="303" y="341" key="NewPhpClassDialog/-1280.280.1280.800/0.0.1920.1080@0.0.1920.1080" timestamp="1586537088357" />
+    <state x="303" y="341" key="NewPhpClassDialog/-1280.280.1280.800/0.0.1920.1080@0.0.1920.1080" timestamp="1586541432145" />
     <state x="40" y="-717" key="NewPhpClassDialog/0.0.1280.800/-263.-1080.1920.1080@-263.-1080.1920.1080" timestamp="1586020330175" />
     <state x="1583" y="83" key="NewPhpClassDialog/0.0.1280.800/1280.-280.1920.1080@1280.-280.1920.1080" timestamp="1586047259326" />
     <state x="697" y="169" key="SettingsEditor" timestamp="1586112653359">
