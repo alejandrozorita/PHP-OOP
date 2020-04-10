@@ -1,0 +1,23 @@
+{
+  "name": "alejandrozorita/oop",
+  "description": "Prácticas básicas oop",
+  "type": "proyect",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Alejandro Zorita",
+      "email": "alejandro.zorita@medssocial.com"
+    }
+  ],
+  "require": {
+    "nesbot/carbon": "^2.32"
+  },
+  "autoload": {
+    "files": [
+      "src/helpers.php"
+    ],
+    "psr-4": {
+      "ComposerComponentesTerceros\\": "src/"
+    }
+  }
+}

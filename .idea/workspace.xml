@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="cc8fd1a9-ec10-4ee9-aa83-bece98fd23df" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trait-macros-metodos-estaticos/public/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/trait-macros-metodos-estaticos/public/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trait-macros-metodos-estaticos/vendor/laravel/HtmlLogger.php" beforeDir="false" afterPath="$PROJECT_DIR$/trait-macros-metodos-estaticos/vendor/laravel/HtmlLogger.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,19 +49,19 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/trait-macros-metodos-estaticos/src" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.PHP" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/trait-macros-metodos-estaticos/vendor/laravel" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/trait-macros-metodos-estaticos/src" />
       <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/trait-macros-metodos-estaticos/src" />
       <recent name="$PROJECT_DIR$/objetos-inmutables" />
       <recent name="$PROJECT_DIR$/objetos-inmutables/src" />
       <recent name="$PROJECT_DIR$/metodos-magicos-__sleep__wakeup/public" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/trait-macros-metodos-estaticos/vendor/laravel" />
     </key>
   </component>
   <component name="RunManager">
@@ -91,7 +89,7 @@
       <workItem from="1586259326541" duration="32000" />
       <workItem from="1586265423200" duration="226000" />
       <workItem from="1586532075322" duration="1696000" />
-      <workItem from="1586536232632" duration="1135000" />
+      <workItem from="1586536232632" duration="3694000" />
     </task>
     <servers />
   </component>
