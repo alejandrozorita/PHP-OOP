@@ -28,11 +28,11 @@ trait CanShootArrowa
         return $this->arrows ?? 50;
     }
 
-    abstract public function getMaxArrow();
+    abstract public function getMaxArrows();
 
 }
 
-
+notificaciones
 trait CanRide
 {
     public function move()
@@ -53,9 +53,9 @@ class Arquero
         echo "<p>Disparó una flecha</p>";
     }
 
-    public function getMaxArrow()
+    public function getMaxArrows()
     {
-
+        return 100;
     }
 
 }
@@ -66,9 +66,9 @@ class ArqueroCaballo
 
     use CanRide, CanShootArrowa;
 
-    public function getMaxArrow()
+    public function getMaxArrows()
     {
-
+        return 120;
     }
 }
 
@@ -92,3 +92,4 @@ $arquero->shootArrow();
 $arqueroCaballo = new ArqueroCaballo();
 $arqueroCaballo->move();
 echo "<p>{$arqueroCaballo->getArrows()}</p>";
+echo "<p>{$arqueroCaballo->getMaxArrows()}</p>";
