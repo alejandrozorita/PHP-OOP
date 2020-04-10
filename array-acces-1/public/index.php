@@ -4,8 +4,6 @@ namespace ArrayAcces1;
 
 require "../vendor/autoload.php";
 
-use PruebasAutomatizadas\User;
-
 $user = new User(
   [
     'first_name' => 'Walter',
