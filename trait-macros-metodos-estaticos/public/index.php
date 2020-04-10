@@ -3,15 +3,17 @@
 namespace TraitMarcos;
 
 require "../vendor/autoload.php";
+require "../vendor/laravel/Macroable.php";
 require "../vendor/laravel/HtmlLogger.php";
+
 
 use Laravel\HtmlLogger;
 
-$html = new HtmlLogger();
-
-$html->addMethod('success', function ($message) {
-    return "<p style=\"color:red\"=>{$message}</p>";
+HtmlLogger::macro('success', function ($message) {
+    return "<p style=\"color:red\"=>{$message}</p>" . $this->hr();
 });
+
+$html = new HtmlLogger();
 
 echo $html->hr();
 
