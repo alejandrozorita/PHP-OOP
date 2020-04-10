@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc8fd1a9-ec10-4ee9-aa83-bece98fd23df" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/composerJson.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trait/public/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/trait/public/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,17 +48,21 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/trait-macros-metodos-estaticos/src" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.PHP" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/trait-macros-metodos-estaticos/vendor/laravel" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/trait-macros-metodos-estaticos/src" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/objetos-inmutables" />
       <recent name="$PROJECT_DIR$/objetos-inmutables/src" />
       <recent name="$PROJECT_DIR$/metodos-magicos-__sleep__wakeup/public" />
-      <recent name="$PROJECT_DIR$/base-pruebas/src" />
     </key>
   </component>
   <component name="RunManager">
@@ -85,6 +89,7 @@
       <workItem from="1586014900965" duration="33420000" />
       <workItem from="1586259326541" duration="32000" />
       <workItem from="1586265423200" duration="226000" />
+      <workItem from="1586532075322" duration="1296000" />
     </task>
     <servers />
   </component>
