@@ -1,6 +1,6 @@
 <?php
 
-namespace ArrayAcces1;
+namespace ArrayAcces;
 
 abstract class Model
 {

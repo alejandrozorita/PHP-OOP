@@ -1,6 +1,6 @@
 <?php
 
-use ArrayAcces1\Str;
+use ArrayAcces\Str;
 
 class strTest extends PHPUnit\Framework\TestCase
 {

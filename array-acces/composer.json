@@ -16,7 +16,7 @@
     "files": [
     ],
     "psr-4": {
-      "ArrayAcces1\\": "src/"
+      "ArrayAcces\\": "src/"
     }
   },
   "require-dev": {

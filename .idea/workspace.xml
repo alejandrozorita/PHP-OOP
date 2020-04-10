@@ -2,9 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc8fd1a9-ec10-4ee9-aa83-bece98fd23df" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/array-acces/test/ModelArrayAccesTest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/array-acces-1/composer.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/array-acces-1/public/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/array-acces-1/public/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/array-acces-1/.gitIgnore" beforeDir="false" afterPath="$PROJECT_DIR$/array-acces/.gitIgnore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/array-acces-1/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/array-acces/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/array-acces-1/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/array-acces/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/array-acces-1/public/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/array-acces/public/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/array-acces-1/src/Model.php" beforeDir="false" afterPath="$PROJECT_DIR$/array-acces/src/Model.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/array-acces-1/src/Str.php" beforeDir="false" afterPath="$PROJECT_DIR$/array-acces/src/Str.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/array-acces-1/src/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/array-acces/src/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/array-acces-1/test/ArrayAccesTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/array-acces-1/test/strTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/array-acces/test/strTest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +56,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -67,12 +76,17 @@
       <recent name="$PROJECT_DIR$/trait-macros-metodos-estaticos/vendor/laravel" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="PHPUnit.ModelArrayAccesTest">
+    <configuration name="ModelArrayAccesTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="ModelArrayAccesTest" file="$PROJECT_DIR$/array-acces/test/ModelArrayAccesTest.php" scope="Class" />
+      <method v="2" />
+    </configuration>
     <configuration name="index.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/game/public/index.php">
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="PHPUnit.ModelArrayAccesTest" />
         <item itemvalue="PHP Script.index.php" />
       </list>
     </recent_temporary>
@@ -92,7 +106,7 @@
       <workItem from="1586259326541" duration="32000" />
       <workItem from="1586265423200" duration="226000" />
       <workItem from="1586532075322" duration="1696000" />
-      <workItem from="1586536232632" duration="6406000" />
+      <workItem from="1586536232632" duration="8931000" />
     </task>
     <servers />
   </component>
@@ -113,6 +127,10 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
+    <state x="281" y="166" key="#ModelArrayAccesTest" timestamp="1586546022957">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="281" y="166" key="#ModelArrayAccesTest/-1280.280.1280.800/0.0.1920.1080@0.0.1920.1080" timestamp="1586546022957" />
     <state x="-15" y="-955" key="#PHP" timestamp="1586020280787">
       <screen x="-263" y="-1080" width="1920" height="1080" />
     </state>
