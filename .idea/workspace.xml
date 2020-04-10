@@ -3,14 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="cc8fd1a9-ec10-4ee9-aa83-bece98fd23df" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pruebas-automatizadas/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/pruebas-automatizadas/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pruebas-automatizadas/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pruebas-automatizadas/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pruebas-automatizadas/src/Model.php" beforeDir="false" afterPath="$PROJECT_DIR$/pruebas-automatizadas/src/Model.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pruebas-automatizadas/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/pruebas-automatizadas/vendor/composer/autoload_classmap.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pruebas-automatizadas/vendor/composer/autoload_files.php" beforeDir="false" afterPath="$PROJECT_DIR$/pruebas-automatizadas/vendor/composer/autoload_files.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pruebas-automatizadas/vendor/composer/autoload_psr4.php" beforeDir="false" afterPath="$PROJECT_DIR$/pruebas-automatizadas/vendor/composer/autoload_psr4.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pruebas-automatizadas/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/pruebas-automatizadas/vendor/composer/autoload_static.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pruebas-automatizadas/vendor/composer/installed.json" beforeDir="false" afterPath="$PROJECT_DIR$/pruebas-automatizadas/vendor/composer/installed.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +90,7 @@
       <workItem from="1586259326541" duration="32000" />
       <workItem from="1586265423200" duration="226000" />
       <workItem from="1586532075322" duration="1696000" />
-      <workItem from="1586536232632" duration="5142000" />
+      <workItem from="1586536232632" duration="5418000" />
     </task>
     <servers />
   </component>
